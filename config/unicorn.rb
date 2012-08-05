@@ -1,6 +1,6 @@
 deploy_to  = "/var/www/twackr"
 rails_root = "#{deploy_to}/current"
-rails_env  = "production"
+rails_env  = "development"
 pid_file   = "#{deploy_to}/shared/pids/unicorn.pid"
 socket_file= "#{deploy_to}/shared/unicorn.sock"
 log_file   = "#{rails_root}/log/unicorn.log"

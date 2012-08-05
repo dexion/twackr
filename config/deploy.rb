@@ -9,8 +9,8 @@ set :rvm_type, :user
 require 'bundler/capistrano'
 
 set :application, "twackr"
-set :rails_env, "production"
-#set :rails_env, "development"
+#set :rails_env, "production"
+set :rails_env, "development"
 
 set :scm, :git
 set :repository, "https://github.com/dexion/twackr.git"
@@ -89,5 +89,5 @@ end
 
 after 'deploy:update_code', 'bundler:bundle_new_release'
 after 'deploy:update_code', 'deploy:config_db_yaml'
-after 'deploy:update_code', 'deploy:precompiled'
+#after 'deploy:update_code', 'deploy:precompiled'
 

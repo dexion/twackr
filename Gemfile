@@ -6,3 +6,6 @@ gem 'sqlite3'
 
 gem 'haml'
 
+gem 'capistrano'
+
+gem 'unicorn'
